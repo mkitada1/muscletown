@@ -1,0 +1,6 @@
+<div class="contents row" >
+  <% @products.each do |product| %>
+    <p><%= product.name %></p>
+    <a href="/products/<%= product.image_url %>">
+  <% end %>
+</div>
